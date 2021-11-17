@@ -1,0 +1,113 @@
+@use "functions" as *;
+@use "variables" as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(#ff6e7f, #bfe9ff) no-repeat center center fixed;
+  background-size: cover;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  // background-image: linear-gradient(#ff6e7f, #bfe9ff);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  margin: rem(50) auto 0;
+
+  img {
+    height: auto;
+    width: rem(100);
+  }
+
+  h1 {
+    margin: rem(50);
+  }
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: auto;
+  max-width: rem(300);
+  gap: 5vw;
+
+  img {
+    height: auto;
+    width: fit-content;
+    max-width: rem(300);
+    border-radius: rem(10);
+  }
+
+  h3 {
+    margin-top: rem(20);
+    font-size: rem(24);
+  }
+
+  a:visited {
+    color: black;
+  }
+}
+
+.wrapper {
+  text-align: center;
+  margin: rem(50) auto;
+  width: rem(700);
+
+  h3 {
+    margin: rem(50) 0;
+    text-align: left;
+  }
+
+  h2 {
+    margin: rem(50) 0;
+  }
+}
+
+li {
+  text-align: left;
+  padding-left: rem(10);
+}
+
+li:not(:last-child) {
+  padding-bottom: rem(5);
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+.recipe-header {
+  display: flex;
+  justify-content: center;
+}
